@@ -8,4 +8,5 @@ class MyList(list):
     """
     def print_sorted(self):
         """definition"""
-        print(sorted(self))
+        if all(isinstance(x, int) for x in self):
+            print(sorted(self))
