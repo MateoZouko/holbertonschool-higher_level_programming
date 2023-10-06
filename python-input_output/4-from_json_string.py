@@ -8,4 +8,7 @@ import json
 
 
 def from_json_string(my_str):
+    """defining function that convert
+        strings into objects
+    """
     return json.loads(my_str)
