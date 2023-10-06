@@ -15,6 +15,7 @@ class Square(Rectangle):
         defining init
         """
         super().__init__(size, size)
+
     def __str__(self):
         """
         defining __str__
