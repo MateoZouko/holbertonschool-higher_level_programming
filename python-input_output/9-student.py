@@ -5,7 +5,7 @@
 """
 
 
-class Stundent:
+class Student:
     """
     Defining Student class with fist_name,
     last_age and age
