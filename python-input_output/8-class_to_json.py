@@ -10,4 +10,4 @@ for JSON serialization of an object
 
 def class_to_json(obj):
     """defining function"""
-    obj.__dict__
+    return obj.__dict__
