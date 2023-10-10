@@ -6,7 +6,14 @@ Base = __import__('base').Base
 
 
 class Rectangle(Base):
+    """Represent a rectangle"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Initialize a new Rectangle.
+
+        Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
+        """
         super().__init__
         self.__width = width
         self.__height = height
