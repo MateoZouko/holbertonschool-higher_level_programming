@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Task 2: Class Rectangle
+    Task 3: Class Rectangle with validate attributes
 """
 from models.base import Base
 
