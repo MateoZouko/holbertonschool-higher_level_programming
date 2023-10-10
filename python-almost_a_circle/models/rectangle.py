@@ -2,7 +2,7 @@
 """
     Task 2: Class Rectangle
 """
-Base = __import__('base').Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -14,17 +14,17 @@ class Rectangle(Base):
             width (int): The width of the new rectangle.
             height (int): The height of the new rectangle.
         """
-        super().__init__
+        super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
-        
+
     @property
     def width(self):
         """Get/set the width of the rectangle."""
         return self.__width
-        
+
     @width.setter
     def width(self, value):
         if not isinstance(value, (value, int)):
@@ -32,14 +32,14 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-        
+
     @property
     def height(self):
         """
             Get/set the height of the rectangle
         """
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
