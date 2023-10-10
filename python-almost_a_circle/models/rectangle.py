@@ -50,7 +50,9 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """ defining arg x"""
+        """
+        defining get/set of the arg x
+        """
         return self.__x
 
     @x.setter
@@ -63,7 +65,9 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """ defining arg y"""
+        """
+        defining get/set of the arg y
+        """
         return self.__y
 
     @y.setter
