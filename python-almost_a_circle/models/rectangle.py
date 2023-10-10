@@ -43,9 +43,9 @@ class Rectangle(Base):
     @property
     def x(self):
         return self.__x
-    
+
     @x.setter
-    def x(self,value):
+    def x(self, value):
         self.__x = value
 
     @property
@@ -53,5 +53,5 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def y(self,value):
+    def y(self, value):
         self.__y = value
