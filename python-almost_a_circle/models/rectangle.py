@@ -15,8 +15,8 @@ class Rectangle(Base):
             height (int): The height of the new rectangle.
         """
         super().__init__(id)
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         self.__x = x
         self.__y = y
 
@@ -39,3 +39,19 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         self.__height = value
+
+    @property
+    def x(self):
+        return self.__x
+    
+    @x.setter
+    def x(self,value):
+        self.__x = value
+
+    @property
+    def y(self):
+        return self.__y
+
+    @y.setter
+    def y(self,value):
+        self.__y = value
