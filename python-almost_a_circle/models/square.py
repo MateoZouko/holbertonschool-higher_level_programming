@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 """
     Task 10: And now, the Square!
+    Defining a class Square
 """
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """Represents a square"""
+
+    """Represents a classs named square"""
+
     def __init__(self, size, x=0, y=0, id=None):
         """Initialize a new Square.
 
@@ -18,6 +21,6 @@ class Square(Rectangle):
 
     def __str__(self):
         """
-            defining __str__
+            defining a new string method
         """
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
