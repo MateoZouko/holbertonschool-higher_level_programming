@@ -11,16 +11,9 @@ class Square(Rectangle):
     """Represents a classs named square"""
 
     def __init__(self, size, x=0, y=0, id=None):
-        """Initialize a new Square.
-
-        Args:
-            width (int): The width of the new square.
-            height (int): The height of the new square.
-        """
+        """init a new method called Square."""
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """
-            defining a new string method
-        """
+        """defining a new string method """
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
