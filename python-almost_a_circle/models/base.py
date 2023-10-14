@@ -42,6 +42,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """adding documentation for json_string"""
         if json_string is None:
             return "[]"
         if len(json_string) == 0:
