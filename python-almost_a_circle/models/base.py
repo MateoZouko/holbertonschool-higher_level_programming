@@ -39,3 +39,11 @@ class Base:
                 for obj in list_objs:
                     result.append(obj.to_dictionary())
                 f.write(cls.to_json_string(result))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None:
+            return "[]"
+        if len(json_string) == 0:
+            "[]"
+        return json.loads(json_string)
