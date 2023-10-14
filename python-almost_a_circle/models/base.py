@@ -46,3 +46,12 @@ class Base:
         if json_string is None or len(json_string) == 0:
             return "[]"
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        if cls.__name__ == 'Rectangle':
+            dm = cls(1, 1)
+        else:
+            dm = cls(1)
+        dm.update(**dictionary)
+        return dm
