@@ -2,6 +2,7 @@
 
 -- script that lists the number of records with the same score in the table
 
-SELECT *, COUNT(*) AS name
+SELECT score name
 FROM second_table
+WHERE name IS NOT NULL
 ORDER BY score DESC;
