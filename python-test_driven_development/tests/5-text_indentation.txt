@@ -1,0 +1,25 @@
+#IMPORT MODULE#
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation("""take: if its. yours?""")
+take:
+<BLANKLINE>
+if its.
+<BLANKLINE>
+yours?
+
+>>> text_indentation(5)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation("""what happen if you dont pass only text""")
+what happen if you dont pass only text
+
+>>> text_indentation("""and if you pass more""","""than two arguments""")
+Traceback (most recent call last):
+TypeError: text_indentation() takes 1 positional argument but 2 were given
