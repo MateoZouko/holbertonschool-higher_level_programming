@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 
 
-"""Task 0"""
+"""
+Task 0:
+defines an add function
+    and it's tested on /tests folder.
+"""
 
 
 def add_integer(a, b=98):
-    """Prototype: def add_integer(a, b=98):
+    """
 a and b must be integers or floats, otherwise raise
 a TypeError exception with the message a must be an
 integer or b must be an integer
