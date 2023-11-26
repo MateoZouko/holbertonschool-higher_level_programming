@@ -1,0 +1,53 @@
+IMPORT MODULE#
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+Test #0: add two integer
+
+>>> add_integer(5, 3)
+8
+
+Test #1: add one float and one integer
+
+>>> add_integer(2.5, 4)
+6
+
+Test #2: give only one parameter, integer
+
+>>> add_integer(5)
+103
+
+#Test 3: give only one parameter, float
+
+>>> add_integer(2.5)
+100
+
+Test #4: add two float
+
+>>> add_integer(3.7, 1.2)
+4
+
+Test #5: try to add no valid argument
+
+>>> add_integer("abc", 2)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer or b must be an integer
+
+
+Test #6: add two no valid argument
+
+>>> add_integer("a", "b")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer or b must be an integer
+
+Test #7: add negative integer
+
+>>> add_integer(-3, -5)
+-8
+
+Test #11: return type value
+
+>>> type(add_integer(5, 5))
+<class 'int'>
