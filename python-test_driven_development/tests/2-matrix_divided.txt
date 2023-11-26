@@ -1,0 +1,37 @@
+#IMPORT MODULE#
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Test #0: None arguments
+
+>>> matrix_divided()
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Test #1: None matrix Value
+
+>>> matrix_divided(None, 2)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test #2: simple list
+
+>>> matrix_divided([[1, 2], [3, 4]], None)
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+Test #3: not integer div
+
+>>> matrix_divided([[1, 2], [3, 4]], "Hello")
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+Test #4: divition by zero
+
+>>> matrix_divided([[1, 2], [3, 4]], 0.)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero
